@@ -8,8 +8,26 @@
 <body>
 <h2>Password Generator</h2>
 <div class="password-box">
-    <label for="name">Enter length of password (max 12) :</label>
-    <input type="text" name="name" id="name" class="name" required/>
+    <div class="field">
+        <label for="name">Enter length of password (max 12) :</label>
+        <input type="text" name="name" id="name" class="name" required/>
+    </div>
+    <div class="field">
+        <label for="bigalpha">Big Alphabet :</label>
+        <input type="checkbox" name="bigalpha" id="bigalpha" class="bigalpha">
+    </div>
+    <div class="field">
+        <label for="smallalpha">Small Alphabet :</label>
+        <input type="checkbox" name="smallalpha" id="smallalpha" class="smallalpha">
+    </div>
+    <div class="field">
+        <label for="num">Number :</label>
+        <input type="checkbox" name="num" id="num" class="num">
+    </div>
+    <div class="field">
+        <label for="special">Special :</label>
+        <input type="checkbox" name="special" id="special" class="special">
+    </div>
     <button class="gen">Generate</button>
     <div class="password-box-result"></div>
     <button class="ctc">Copy to Clipboard</button>
