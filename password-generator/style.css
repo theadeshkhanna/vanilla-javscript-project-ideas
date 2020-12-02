@@ -6,36 +6,121 @@
 
 body {
     display: flex;
+    font-size: 1.2rem;
     margin: 0;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #2493c4;
+    background-color: #02111B;
     font-family: "Poppins", sans-serif;
 }
 
 h2 {
     font-size: 3.5rem;
+    color: #E2FCEF;
 }
 
 .password-box {
-    background-color: whitesmoke;
+    background-color: #E2FCEF;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     width: 35rem;
-    height: 45rem;
+    height: 40rem;
     padding: 1rem;
+}
+
+.name {
+    margin-left: 5px;
+    width: 5rem;
+    height: 2rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #02111B;
+    color: #E2FCEF;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.name:focus,
+.bigalpha:focus,
+.smallalpha:focus,
+.num:focus,
+.special:focus {
+    border: none;
+    outline: none;
+}
+
+.bigalpha,
+.smallalpha,
+.num,
+.special {
+    width: 1.5rem;
+    height: auto;
+    border: none;
+    background-color: #02111B;
+    color: #E2FCEF;
+    border-radius: 2px;
+}
+
+label {
+    width:22rem;
 }
 
 .field {
     display: flex;
     align-items: center;
+    padding: 0.75rem 0;
+    font-weight: bold;
+    color: #02111B;
 }
 
 .password-box-result {
-    width: 33rem;
-    height: 25rem;
-    background-color: #b3b3b3;
+    width: 30rem;
+    height: 5rem;
+    margin: 3.5rem 1.3rem 1.3rem 1.3rem;
+    color: #02111B;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    padding-left: 8rem;
+    padding-top: 0.5rem;
+    font-size: 3rem;
+}
+
+.gen {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: 10rem;
+    height: 3rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #02111B;
+    cursor: pointer;
+    margin-left: 11rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: #E2FCEF;
+}
+
+.ctc {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: 15rem;
+    height: 3rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #02111B;
+    cursor: pointer;
+    margin-left: 9rem;
+    font-weight: bold;
+    color: #E2FCEF;
+    margin-top: 2rem;
+}
+
+.gen:focus,
+.ctc:focus {
+    outline: none;
 }

@@ -42,6 +42,10 @@ function fn1() {
         checked.push("special");
     }
 
+    if(checked.length === 0) {
+        alert("please select one or more category");
+        return;
+    }
 
     for (let i = 0; i < num; i++) {
         let rndElem = checked[Math.floor(Math.random() * checked.length)];
